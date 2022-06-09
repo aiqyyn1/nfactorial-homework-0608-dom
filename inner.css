@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    /* bottom: 100; */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    position: absolute;
+    bottom: 0;
+}
+
+.shown {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    margin-right: 400px;
+    /* justify-content: space-between; */
+    width: 18%;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    margin-top: 35px;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn-change-background {
+    border-radius: 10px;
+    border: 1px solid white;
+    /* background-color: transparent; */
+    width: 40px;
+    height: 40px;
+    margin: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-background {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.playpause-track {
+    margin: 30px;
+}
+
+.progress-bar {
+    grid-area: four;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+#progressBar {
+    appearance: none;
+    height: 5px;
+    background: white;
+    width: 57.5%;
+    outline: none;
+    border-radius: 30px;
+}
+
+#progressBar::-webkit-slider-thumb {
+    appearance: none;
+    height: 11px;
+    width: 11px;
+    outline: none;
+    background: #f94c57;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.track-time {
+    grid-area: five;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+
+#currentTime {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+#durationTime {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: #f94c57;
+    text-shadow: 0 0 15px white;
+}
